@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useStore, SECTIONS } from '../store';
+import AdBanner from './AdBanner';
 
 const Nav = () => {
   const { currentSection, setCurrentSection } = useStore();
@@ -49,6 +50,7 @@ const PlanetInfo = ({ title, description, stats }) => (
         </div>
       ))}
     </div>
+    <AdBanner />
   </div>
 );
 
