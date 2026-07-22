@@ -11,6 +11,7 @@ import PageNavigation from './components/UI/PageNavigation'
 import ControlDock from './components/UI/ControlDock'
 import BookImportModal from './components/UI/BookImportModal'
 import SpellCasterUI from './components/UI/SpellCasterUI'
+import { Analytics } from '@vercel/analytics/react'
 
 function CanvasLoader() {
   const { progress } = useProgress()
@@ -50,6 +51,7 @@ export default function App() {
       <SpellCasterUI />
       <ControlDock />
       <BookImportModal />
+      <Analytics />
     </div>
   )
 }
