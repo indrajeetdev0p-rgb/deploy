@@ -31,8 +31,8 @@ export default function PageNavigation() {
   useEffect(() => {
     if (!isAutoDemo) return
     const interval = setInterval(() => {
-      const { currentPage: curP, secretUnlocked: sec } = useStore.getState()
-      const maxP = sec ? 5 : 4
+      const { currentPage: curP, activeBookPages } = useStore.getState()
+      const maxP = activeBookPages.length - 1
       const nextP = curP >= maxP ? 0 : curP + 1
       useStore.getState().setCurrentPage(nextP)
     }, 4000)

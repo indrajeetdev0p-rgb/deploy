@@ -5,7 +5,6 @@ import gsap from 'gsap'
 import { useStore } from '../../store'
 import { createPageTexture } from './CanvasTextureGenerator'
 import { soundFx } from '../../utils/audio'
-import { Wand2 } from 'lucide-react'
 
 // Material Helper Functions
 const getCoverColor = (material: string): string => {
@@ -61,8 +60,7 @@ export default function SpellBook() {
     gemstone,
     setIsHoveringBook,
     audioEnabled,
-    activeBookPages,
-    castSpell
+    activeBookPages
   } = useStore()
 
   const bookGroupRef = useRef<THREE.Group>(null)

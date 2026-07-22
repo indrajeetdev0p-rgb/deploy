@@ -1,5 +1,5 @@
 import { useStore } from '../../store'
-import { Volume2, VolumeX, Camera, Play, Pause, Lock, Unlock, RefreshCw, BookOpen, Upload } from 'lucide-react'
+import { Volume2, VolumeX, Camera, Play, Pause, RefreshCw, Upload } from 'lucide-react'
 import confetti from 'canvas-confetti'
 
 export default function Header() {
@@ -10,7 +10,6 @@ export default function Header() {
     setIsAutoDemo,
     setIsOpen,
     setCurrentPage,
-    setIsReaderModalOpen,
     setIsImportModalOpen,
     activeBookTitle
   } = useStore()
