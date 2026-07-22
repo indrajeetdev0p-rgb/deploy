@@ -111,7 +111,7 @@ export const useStore = create<ArcaneState>((set, get) => ({
   gemstone: 'sapphire',
   setGemstone: (gem) => set({ gemstone: gem }),
 
-  environment: 'library',
+  environment: 'dungeon',
   setEnvironment: (env) => set({ environment: env }),
   lighting: 'mystic',
   setLighting: (light) => set({ lighting: light }),
